@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Paleta de Chile Travel: colores sólidos, sin gradientes */
+@theme {
+  --color-marino: #12355b;
+  --color-marino-oscuro: #0b2340;
+  --color-oceano: #1f6f8b;
+  --color-arena: #f6f1e9;
+  --color-coral: #e4572e;
+  --color-coral-oscuro: #c4441f;
+  --font-sans: "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}

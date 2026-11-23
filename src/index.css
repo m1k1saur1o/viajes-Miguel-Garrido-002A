@@ -1,0 +1,42 @@
+/* Estilos globales personalizados (complementan a Tailwind) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animación del indicador de carga */
+@keyframes giro {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 4px solid #d6e4ea;
+  border-top-color: #1f6f8b;
+  border-radius: 9999px;
+  animation: giro 0.8s linear infinite;
+}
+
+/* Recorte de texto a 3 líneas en tarjetas */
+.texto-recortado {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
